@@ -109,10 +109,7 @@ FROM pizza_sales
 GROUP BY pizza_name
 ORDER BY Total_Orders ASC;
 
--- =====================================================
--- Optional Filter Example
--- Use WHERE clause to filter by pizza_category or pizza_size
--- =====================================================
+
 
 SELECT TOP 5 pizza_name,
        COUNT(DISTINCT order_id) AS Total_Orders
